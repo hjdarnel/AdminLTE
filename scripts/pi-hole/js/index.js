@@ -412,7 +412,7 @@ function escapeHtml(text) {
 }
 
 function updateTopClientsChart() {
-    $.getJSON("api.php?summaryRaw&getQuerySources", function(data) {
+    $.getJSON("api.php?summaryRaw&getQuerySources=20", function(data) {
 
         if("FTLnotrunning" in data)
         {
